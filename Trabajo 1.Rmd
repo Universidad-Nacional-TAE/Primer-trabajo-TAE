@@ -1,0 +1,287 @@
+---
+title: "Trabajo1"
+author: "Andres Garcia"
+date: "17/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r ignorar advertencias }
+options(warn=-1)
+```
+
+```{r Importacion de librerias  ,results='hide', message=FALSE, warning=FALSE}
+library(dplyr,warn.conflicts = FALSE)
+library(tidyr,warn.conflicts = FALSE)
+library(tidyverse,warn.conflicts = FALSE)
+library(lubridate,warn.conflicts = FALSE)
+library(stringr,warn.conflicts = FALSE)
+
+```
+
+```{r}
+Base_de_datos1 <- read.csv2("incidentes_viales.csv",encoding = "UTF-8")
+```
+
+```{r}
+X<-summary(Base_de_datos$COMUNA)
+```
+```{r}
+S<-Base_de_datos$COMUNA
+```
+
+```{r}
+segundo <- read.csv2("file_name2.csv",encoding = "UTF-8")
+```
+
+
+```{r}
+hss<-str_split_fixed(segundo$LOCATION, ", ", 2)
+
+```
+
+```{r}
+df_mtx <- as.data.frame(hss)
+```
+
+
+
+```{r}
+segundo$Longitud <- df_mtx$V1
+segundo$Latitud <- df_mtx$V2
+
+```
+
+
+
+
+```{r Analisis y Depuracion-9 obtener variable año}
+BASE03 <- segundo %>% 
+  mutate(AÑO=substring(FECHA_ACCIDENTE,7,10))%>%
+  mutate(AÑO=as.double(AÑO))
+```
+
+
+```{r Analisis y Depuracion-10 Conversion a tipo date de FECHA }
+BASE04 <-segundo %>%
+  mutate(Fecha_factor=FECHA_ACCIDENTE)%>%
+  mutate(FECHA = dmy(substring(segundo$FECHA_ACCIDENTE, 1, 10)))%>%
+  mutate(DIA=substring(FECHA_ACCIDENTE,1,2))
+
+```
+
+
+
+```{r}
+BASE07<-BASE04%>%
+  mutate(Latitud=str_replace(Latitud,"\\]","")) %>%
+  mutate(Longitud=str_replace(Longitud,"\\[",""))%>%
+  mutate(Latitud=as.double(Latitud))%>%
+  mutate(Longitud=as.double(Longitud))%>%
+  mutate(CLASE_ACCIDENTE=str_replace(CLASE_ACCIDENTE,"Caída de Ocupante","Caida Ocupante"))
+```
+
+
+```{r Analisis y Depuracion-6 Formato de hora 2}
+BASE02<-BASE07%>%
+  filter(!HORA=="")%>%
+  mutate(Hora_factor=substring(HORA,1,5))%>%
+  mutate(horaentera=str_replace(Hora_factor,":","")) %>%
+  mutate(horaentera=as.double(horaentera))%>%
+  arrange(HORA)
+  
+```
+
+```{r Pregunta 1 Correcion de la hora entera }
+hora00 <- BASE02 %>%
+  select(horaentera)%>%
+  filter(horaentera>=0 & horaentera<100)
+hora01 <- BASE02 %>%
+  select(horaentera)%>%
+  filter(horaentera>60 & horaentera<200)%>%
+  mutate(horaentera=horaentera-40)
+hora02 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>160 & horaentera<300)%>%
+  mutate(horaentera=horaentera-80)
+hora03 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>260 & horaentera<400)%>%
+  mutate(horaentera=horaentera-120)
+hora04 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>360 & horaentera<500)%>%
+  mutate(horaentera=horaentera-160)
+hora05 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>460 & horaentera<600)%>%
+  mutate(horaentera=horaentera-200)
+hora06 <- BASE02%>%
+  select(horaentera)%>%
+  select(horaentera)%>%
+  filter(horaentera>560 & horaentera<700)%>%
+  mutate(horaentera=horaentera-240)
+hora07 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>660 & horaentera<800)%>%
+  mutate(horaentera=horaentera-280)
+hora08 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>760 & horaentera<900)%>%
+  mutate(horaentera=horaentera-320)
+hora09 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>860 & horaentera<1000)%>%
+  mutate(horaentera=horaentera-360)
+hora10 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>960 & horaentera<1100)%>%
+  mutate(horaentera=horaentera-400)
+hora11 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1060 & horaentera<1200)%>%
+  mutate(horaentera=horaentera-440)
+hora12 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1160 & horaentera<1300)%>%
+  mutate(horaentera=horaentera-480)
+hora13 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1260 & horaentera<1400)%>%
+  mutate(horaentera=horaentera-520)
+hora14 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1360 & horaentera<1500)%>%
+  mutate(horaentera=horaentera-560)
+hora15 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1460 & horaentera<1600)%>%
+  mutate(horaentera=horaentera-600)
+hora16 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1560 & horaentera<1700)%>%
+  mutate(horaentera=horaentera-640)
+hora17 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1660 & horaentera<1800)%>%
+  mutate(horaentera=horaentera-680)
+hora18 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1760 & horaentera<1900)%>%
+  mutate(horaentera=horaentera-720)
+hora19 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1860 & horaentera<2000)%>%
+  mutate(horaentera=horaentera-760)
+hora20 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>1960 & horaentera<2100)%>%
+  mutate(horaentera=horaentera-800)
+hora21 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>2060 & horaentera<2200)%>%
+  mutate(horaentera=horaentera-840)
+hora22 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>2160 & horaentera<2300)%>%
+  mutate(horaentera=horaentera-880)
+hora23 <- BASE02%>%
+  select(horaentera)%>%
+  filter(horaentera>2260 & horaentera<2400)%>%
+  mutate(horaentera=horaentera-920)
+
+```
+
+```{r pregunta 1-2 unificacion de horarios}
+Hora_en_minutos <- bind_rows(hora00 %>% rownames_to_column(),
+          hora01 %>% rownames_to_column(), 
+          hora02 %>% rownames_to_column(),
+          hora03 %>% rownames_to_column(),
+          hora04 %>% rownames_to_column(),
+          hora05 %>% rownames_to_column(),
+          hora06 %>% rownames_to_column(),
+          hora07 %>% rownames_to_column(),
+          hora08 %>% rownames_to_column(),
+          hora09 %>% rownames_to_column(),
+          hora10 %>% rownames_to_column(),
+          hora11 %>% rownames_to_column(),
+          hora12 %>% rownames_to_column(),
+          hora13 %>% rownames_to_column(),
+          hora14 %>% rownames_to_column(),
+          hora15 %>% rownames_to_column(),
+          hora16 %>% rownames_to_column(),
+          hora17 %>% rownames_to_column(),
+          hora18 %>% rownames_to_column(),
+          hora19 %>% rownames_to_column(),
+          hora20 %>% rownames_to_column(),
+          hora21 %>% rownames_to_column(),
+          hora22 %>% rownames_to_column(),
+          hora23 %>% rownames_to_column())
+```
+
+
+
+```{r Pregunta  1-3}
+pregunta01_1 <- Hora_en_minutos %>% 
+  group_by(horaentera) %>% 
+  summarise(num_acc = n())%>%
+  arrange(desc(num_acc))
+```
+
+```{r Pregunta  1-4}
+ggplot(pregunta01_1, aes(horaentera, num_acc)) +
+  geom_line(aes( horaentera), size = 0.4) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0))+
+  scale_x_continuous("Hora", breaks =seq(0, 1440,60),labels = c("12:00 AM","1:00 AM","2:00 AM","3:00 AM","4:00 AM","5:00 AM","6:00 AM","7:00 AM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 AM","3:00 PM","4:00 PM","5:00 PM","6:00 PM","7:00 PM","8:00 PM","9:00 PM","10:00 PM","11:00 PM","12:00 AM"))
+```
+
+
+
+```{r Pregunta  8-1}
+tablapregunta8_1 <- BASE07 %>% 
+  group_by(año =AÑO, CLASE_ACCIDENTE) %>% 
+  summarise(num_acc = n())%>%
+  filter(!CLASE_ACCIDENTE=="")
+```
+
+```{r Pregunta  8-2}
+tablapregunta8_2 <- BASE07 %>% 
+  group_by(año =AÑO, CLASE_ACCIDENTE) %>% 
+  summarise(num_acc = n())%>%
+  filter(!CLASE_ACCIDENTE=="")%>%
+  filter(!CLASE_ACCIDENTE=="Choque")
+```
+
+
+```{r Pregunta  8-3}
+ggplot(tablapregunta8_1, aes(año, num_acc)) +
+  geom_line(aes(col = CLASE_ACCIDENTE), size = 1.5) +
+  labs(y = "Número de incidentes")
+```
+```{r}
+
+```
+
+
+```{r Pregunta  5}
+ggplot(BASE07, aes(Longitud, Latitud)) +
+  geom_point()
+```
+
+```{r pregunta 8-4}
+ggplot(tablapregunta8_2, aes(año, num_acc)) +
+  geom_line(aes(col = CLASE_ACCIDENTE), size = 1.5) +
+  labs(y = "Número de incidentes")
+```
+
+
+
+
+```{r}
+unique(BASE07$BARRIO)
+```
+
