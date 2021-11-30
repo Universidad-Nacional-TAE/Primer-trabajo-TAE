@@ -22,7 +22,7 @@ En base en esto se realizaron diferentes formas de representacion descriptivas p
 - Diagrama de barras 
 - Tablas
 
-#### Mapas y diagramas 
+#### Mapas,diagramas y analisis descriptivo 
 
 Mapa de accidentabilidad en el municipio de Medellin en la temporada de 2014 a 2019:
 
