@@ -52,15 +52,15 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se man
 
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
-![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/FRECUENCIA.jfif)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/frecuencia.jpeg)
 
 
 La informacion presenta las variables con mas frecuencia y los datos necesarios para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
 
 - En el lapso del los años 2014-2020 el año en el que mas se presentaron accidentes vieles fue el 2016 con un total de 47103 correspondiente al 17,4% de los accidentes totales.
-- Los tipos de accidentes se han clasificado en 9 (), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellin han sido por choque.
+- Los tipos de accidentes se han clasificado en 6 ('Choque', 'Atropello', 'Caida Ocupante', 'Volcamiento','Incendio', 'Otro' ), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellin han sido por choques.
 - En la base de datos se registraron 22 ubicaciones diferentes que han tenido accidentes dentro de la ciudad de Medelliín, de ellos 52190 han sucedido en La Candelaria que corresponden al 19,3% de los accidentes totales.
-- Hay cuatro diferentes niveles de gravedad clasificados para los accidentes viales (), donde más de la mitad de los accidentes dejaron heridos, hay un registro de 150071 equivalentes al 55,4% de su totalidad.
+- Hay tres diferentes niveles de gravedad clasificados para los accidentes viales ('Con heridos', 'Solo daños', 'Con muertos'), donde más de la mitad de los accidentes dejaron heridos, hay un registro de 150071 equivalentes al 55,4% de su totalidad.
 - Algo importante que puede influir en el aumento de los accidentes viales es el diseño de las vias, 187319 de los accidentes registrados ocurrieron en los tramo de via, equivalentes al 69,8% de los accidentes ocurridos etre los 13 diferentes diseños de vias.
 
 ### Modelos predictivos
