@@ -50,7 +50,7 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se man
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/AccidentabilidadA%C3%B1o.png?raw=true)
 
 
-En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año en las diferentes zonas de Medellin entre el 2014 y el 2019 y se llegaron a las siienytes conclusiones:
+En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año en las diferentes zonas de Medellin entre el 2014 y el 2019 y se llegaron a las siguientes conclusiones sobre accidente con mayor frecuencia, es decir, los choques dentro de Medellin:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2014.jpeg)
 - Se demuestran que el accidente más frecuente son los choques en 2014 con un porentaje de 65.45% del total de accidentes ocurridos.
@@ -69,8 +69,8 @@ En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2019.jpeg)
 - Ha habido una rebaja significativa de accidentes por choques frente al año anterior del 2,8%, aunque sigue siendo mayor al año inicial un 1,8% aproximadamente.
 
-Algunas conclusiones generales a las que puede llegar son.
--
+Algunas conclusiones generales a las que puede llegar son:
+- (tabla accidentalidad por año)
 
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
