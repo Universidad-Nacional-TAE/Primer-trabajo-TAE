@@ -52,7 +52,7 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se man
 
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
-![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/b23ce64b62f48faf56159409a1acad8bfbc05c20/Images/describe.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/FRECUENCIA.jfif)
 
 
 La informacion presenta las variables con mas frecuencia y los datos necesarios para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
