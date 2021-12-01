@@ -67,6 +67,4 @@ La informacion presenta las variables con mas frecuencia y los datos necesarios 
 
 ### Aplicación Web 
 
-Se realizo una aplicación web para mostrar los diferentes modelos y graficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellin, para que de esta forma el publico libre pueda visualizar los datos y modelos predictivos.
-
-![https://e4r3as.herokuapp.com/]
+Se realizo una aplicación web para mostrar los diferentes modelos y graficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellin, para que de esta forma el publico libre pueda visualizar los datos y modelos predictivos.[link](https://e4r3as.herokuapp.com/)
