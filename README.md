@@ -50,6 +50,15 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se man
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/AccidentabilidadA%C3%B1o.png?raw=true)
 
 
+En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año en las diferentes zonas de Medellin entre el 2014 y el 2019
+
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2014.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2015.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2016.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2017.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2018.jpeg)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2019.jpeg)
+
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/frecuencia.jpeg)
