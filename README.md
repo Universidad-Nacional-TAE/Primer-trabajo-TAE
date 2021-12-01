@@ -61,13 +61,13 @@ En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año 
 - Los choques disminuyeron un 1,2% aproximadamente respecto al 2015 y sigue estando más alto un 0,8% respecto al 2014.
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2017.jpeg)
-- Se sigue aumentando el porcentaje de choques año por año, un respecto al 2016 y un respecto al 2014.
+- Se sigue aumentando el porcentaje de choques año por año, un 2,4% respecto al 2016 y un 3,2% respecto al 2014.
  
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2018.jpeg)
-- Se sigue aumentando el porcentaje de choques año por año, un respecto al 2017 y un respecto al 2014.
+- Se sigue aumentando el porcentaje de choques año por año, un 1,4% respecto al 2017 y un 4,6% respecto al 2014.
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2019.jpeg)
-- Ha habido una rebaja significativa de accidentes por choques frente al año anterior.
+- Ha habido una rebaja significativa de accidentes por choques frente al año anterior del 2,8%, aunque sigue siendo mayor al año inicial un 1,8% aproximadamente.
 
 Algunas conclusiones generales a las que puede llegar son.
 -
