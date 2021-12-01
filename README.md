@@ -48,3 +48,17 @@ Cabe resaltar que las comuna mas accidentadas del valle del aburra son:
 Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se mantuvo constante por tanto no se han hecho efectivas los diferentes metodos de apciguamiento de accidentes por medio de la educacion vial; ademas en el 2020 se nota cambio brusco de disminución de la accidentabilidad debido confinamiento producido por pandamia  del virus COVID-19.
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/AccidentabilidadA%C3%B1o.png?raw=true)
+
+
+Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
+
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/b23ce64b62f48faf56159409a1acad8bfbc05c20/Images/describe.jpeg)
+De este, la informacion se nos presenta las variables con mas frecuencia y la informacion necesaria para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
+
+- En el lapso del los años 2014-2020 el año en el que mas se presentaron accidentes vieles fue el 2016 con un total de 47103 correspondiente al 17,4% de los accidentes totales.
+- Los tipos de accidentes se han clasificado en 9 (), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellin han sido por choque.
+- En la base de datos se registraron 22 ubicaciones diferentes que han tenido accidentes dentro de la ciudad de Medelliín, de ellos 52190 han sucedido en La Candelaria que corresponden al 19,3% de los accidentes totales.
+- Hay cuatro diferentes niveles de gravedad clasificados para los accidentes viales (), donde más de la mitad de los accidentes dejaron heridos, hay un registro de 150071 equivalentes al 55,4% de su totalidad.
+- Algo importante que puede influir en el aumento de los accidentes viales es el diseño de las vias, 187319 de los accidentes registrados ocurrieron en los tramo de via, equivalentes al 69,8% de los accidentes ocurridos etre los 13 diferentes diseños de vias.
+
+### Modelos predictivos
