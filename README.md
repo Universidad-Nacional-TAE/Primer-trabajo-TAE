@@ -64,3 +64,9 @@ La informacion presenta las variables con mas frecuencia y los datos necesarios 
 - Algo importante que puede influir en el aumento de los accidentes viales es el diseño de las vias, 187319 de los accidentes registrados ocurrieron en los tramo de via, equivalentes al 69,8% de los accidentes ocurridos etre los 13 diferentes diseños de vias.
 
 ### Modelos predictivos
+
+### Aplicación Web 
+
+Se realizo una aplicación web para mostrar los diferentes modelos y graficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellin, para que de esta forma el publico libre pueda visualizar los datos y modelos predictivos.
+
+![https://e4r3as.herokuapp.com/]
