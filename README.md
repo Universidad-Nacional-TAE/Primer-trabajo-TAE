@@ -53,7 +53,9 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellin se man
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/b23ce64b62f48faf56159409a1acad8bfbc05c20/Images/describe.jpeg)
-De este, la informacion se nos presenta las variables con mas frecuencia y la informacion necesaria para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
+
+
+La informacion presenta las variables con mas frecuencia y los datos necesarios para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
 
 - En el lapso del los años 2014-2020 el año en el que mas se presentaron accidentes vieles fue el 2016 con un total de 47103 correspondiente al 17,4% de los accidentes totales.
 - Los tipos de accidentes se han clasificado en 9 (), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellin han sido por choque.
