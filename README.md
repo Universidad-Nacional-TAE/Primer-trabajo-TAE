@@ -85,7 +85,7 @@ La informacion presenta las variables con mas frecuencia y los datos necesarios 
 
 ### Modelos predictivos
 
-![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterMapa.png)
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterMapa1.png)
 
 ### Aplicación Web 
 
