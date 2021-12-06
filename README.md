@@ -85,7 +85,29 @@ La informacion presenta las variables con mas frecuencia y los datos necesarios 
 
 ### Modelos predictivos
 
+#### Cluster
+
+Se realizo una agrupación por barrios por la peligrosidad de accidentabilidad por medio de datos de la gravedad de los accidentes de transito clasificados por  muertos, daños y heridos,ademas del numero de accidentes cada uno de estos por cada de barrio de Medellin; donde se realizo la sumatoria de cada barrio de estas caracteristicas para luego sacar la media y normalización.
+
+##### Algoritmo de k-means
+
+Para obtener el numero de k mas optimo con los datos antes descritos se relaliza el metodo del codo donde se mide la distancia entre los centroides hallados con respecto a los datos, para de esta forma obtener el score donde el mas optimo seria de 1, para este caso se obtuvo un valor de k = 3.
+
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/KBarrio.png)
+
+Ya teniendo este k se realizo el algoritmo de k- mean para seccionar por peligrosidad de accidentabilidad de movilidad, este cluster se definio de la siguiente manera:
+
+- 1 : Alto riesgo de accidentes y peligro. Peligro alto 
+- 2 : Peligro moderado. Peligro Medio 
+- 0 : Peligro bajo de accidentes. Peligro bajo
+
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterBarrio.PNG)
+
+Con esto ya se quiere representar por medio de un grafico geografico la representacion puntual en el mapa de estos cluster de cada barrio por peligrosidad. 
+
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterMapa1.png)
+
+Obteniendo esto se puede concluir que los barrios mas accidentables y peligrosos para los conductores se encuentran en la cercania de las vias principales y sus cercanias; ya en el nivel de peligorsidad se encuentran la gran mayoria de barrios de la ciudad de Medellin donde se puede concluir que aunque no es un riesgo total movilizarse en la ciudad se debe tomar una preocuación en la movilidad ya que se tiene una tasa ya admitible de accidentes que pueden occurrir.
 
 ### Aplicación Web 
 
