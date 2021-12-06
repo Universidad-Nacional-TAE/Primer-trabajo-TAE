@@ -69,8 +69,6 @@ En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2019.jpeg)
 - Ha habido una rebaja significativa de accidentes por choques frente al año anterior del 2,8%, aunque sigue siendo mayor al año inicial un 1,8% aproximadamente.
 
-Algunas conclusiones generales a las que puede llegar son:
-- (tabla accidentalidad por año)
 
 Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
 
