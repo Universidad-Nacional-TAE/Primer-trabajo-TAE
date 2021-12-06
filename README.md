@@ -89,7 +89,7 @@ La informacion presenta las variables con mas frecuencia y los datos necesarios 
 
 Se realizo una agrupación por barrios por la peligrosidad de accidentabilidad por medio de datos de la gravedad de los accidentes de transito clasificados por  muertos, daños y heridos,ademas del numero de accidentes cada uno de estos por cada de barrio de Medellin; donde se realizo la sumatoria de cada barrio de estas caracteristicas para luego sacar la media y normalización.
 
-##### Algoritmo de k-means
+#### Algoritmo de k-means
 
 Para obtener el numero de k mas optimo con los datos antes descritos se relaliza el metodo del codo donde se mide la distancia entre los centroides hallados con respecto a los datos, para de esta forma obtener el score donde el mas optimo seria de 1, para este caso se obtuvo un valor de k = 3.
 
