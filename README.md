@@ -57,7 +57,8 @@ Se tiene que en el periodo de 2015 a 2019 la accidentabilidad en Medellín se ma
 En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año en las diferentes zonas de Medellin entre el 2014 y el 2019 y se llegaron a las siguientes conclusiones sobre accidente con mayor frecuencia, es decir, los choques dentro de Medellin:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2014.jpeg)
-- Se demuestran que el accidente más frecuente son los choques en 2014 con un porentaje de 65.45% del total de accidentes ocurridos.
+- Se demuestran que el accidente más frecuente son los choques en 2014 con un porcentaje de 65.45% del total de accidentes ocurridos.
+
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/2015.jpeg)
 - Las cifras respecto al año 2014 tiene un aumento de 1,94% en choques.
 
@@ -74,45 +75,48 @@ En cuanto a la accidentabilidad se presenta en relacion a lo ocurrido cada año 
 - Ha habido una rebaja significativa de accidentes por choques frente al año anterior del 2,8%, aunque sigue siendo mayor al año inicial un 1,8% aproximadamente.
 
 
-Junto con el analisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes graficos expuestos anteriormente:
+Junto con el análisis se obtiene una tabla con las variables usadas frecuentemente para los diferentes gráficos expuestos anteriormente:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/frecuencia.jpeg)
 
 
-La informacion presenta las variables con mas frecuencia y los datos necesarios para obtener los porcentajes mas altos de cada variable, para ser más claros , nos muestran que:
+La información presenta las variables con más frecuencia y los datos necesarios para obtener los porcentajes más altos de cada variable, para ser más claros, nos muestran que:
 
-- En el lapso del los años 2014-2020 el año en el que mas se presentaron accidentes vieles fue el 2016 con un total de 47103 correspondiente al 17,4% de los accidentes totales.
-- Los tipos de accidentes se han clasificado en 6 ('Choque', 'Atropello', 'Caida Ocupante', 'Volcamiento','Incendio', 'Otro' ), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellin han sido por choques.
-- En la base de datos se registraron 22 ubicaciones diferentes que han tenido accidentes dentro de la ciudad de Medelliín, de ellos 52190 han sucedido en La Candelaria que corresponden al 19,3% de los accidentes totales.
+- En el lapso del los años 2014-2020 el año en el que más se presentaron accidentes viales fue el 2016 con un total de 47103 correspondientes al 17,4% de los accidentes totales.
+- Los tipos de accidentes se han clasificado en 6 ('Choque', 'Atropello', 'Caída Ocupante', 'Volcamiento','Incendio', 'Otro'), de los cuales los que mayor frecuencia han tenido son los choques con un total de 180575, es decir el 66% de los accidentes en la ciudad de Medellín han sido por choques.
+- En la base de datos se registraron 22 ubicaciones diferentes que han tenido accidentes dentro de la ciudad de Medellín, de ellos 52190 han sucedido en La Candelaria que corresponden al 19,3% de los accidentes totales.
 - Hay tres diferentes niveles de gravedad clasificados para los accidentes viales ('Con heridos', 'Solo daños', 'Con muertos'), donde más de la mitad de los accidentes dejaron heridos, hay un registro de 150071 equivalentes al 55,4% de su totalidad.
-- Algo importante que puede influir en el aumento de los accidentes viales es el diseño de las vias, 187319 de los accidentes registrados ocurrieron en los tramo de via, equivalentes al 69,8% de los accidentes ocurridos etre los 13 diferentes diseños de vias.
+- Algo importante que puede influir en el aumento de los accidentes viales es el diseño de las vías, 187319 de los accidentes registrados ocurrieron en el tramo de vía, equivalentes al 69,8% de los accidentes ocurridos entre los 13 diferentes diseños de vías.
+
 
 ### Modelos predictivos
 
 #### Cluster
 
-Se realizo una agrupación por barrios por la peligrosidad de accidentabilidad por medio de datos de la gravedad de los accidentes de transito clasificados por  muertos, daños y heridos,ademas del numero de accidentes cada uno de estos por cada de barrio de Medellin; donde se realizo la sumatoria de cada barrio de estas caracteristicas para luego sacar la media y normalización.
+Se realizó una agrupación por barrios por la peligrosidad de accidentabilidad por medio de datos de la gravedad de los accidentes de tránsito clasificados por muertos, daños y heridos,además del número de accidentes cada uno de estos por cada de barrio de Medellín; donde se realizó la sumatoria de cada barrio de estas características para luego sacar la media y normalización.
 
 #### Algoritmo de k-means
 
-Para obtener el numero de k mas optimo con los datos antes descritos se relaliza el metodo del codo donde se mide la distancia entre los centroides hallados con respecto a los datos, para de esta forma obtener el score donde el mas optimo seria de 1, para este caso se obtuvo un valor de k = 3.
+Para obtener el número de k más óptimo con los datos antes descritos se realiza el método del codo donde se mide la distancia entre los centroides hallados con respecto a los datos, para de esta forma obtener el score donde el más óptimo seria de 1, para este caso se obtuvo un valor de k = 3.
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/KBarrio.png)
 
-Ya teniendo este k se realizo el algoritmo de k- mean para seccionar por peligrosidad de accidentabilidad de movilidad, este cluster se definio de la siguiente manera:
+Ya teniendo este k se realizó el algoritmo de k- mean para seccionar por peligrosidad de accidentabilidad de movilidad, este cluster se definió de la siguiente manera:
 
-- 1 : Alto riesgo de accidentes y peligro. Peligro alto 
-- 2 : Peligro moderado. Peligro Medio 
-- 0 : Peligro bajo de accidentes. Peligro bajo
+- 1: Alto riesgo de accidentes y peligro. Peligro alto
+- 2: Peligro moderado. Peligro Medio
+- 0: Peligro bajo de accidentes. Peligro bajo
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterBarrio.PNG)
 
-Con esto ya se quiere representar por medio de un grafico geografico la representacion puntual en el mapa de estos cluster de cada barrio por peligrosidad. 
+Con esto ya se quiere representar por medio de un gráfico geográfico la representación puntual en el mapa de estos cluster de cada barrio por peligrosidad.
+
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/ClusterMapa1.png)
 
-Obteniendo esto se puede concluir que los barrios mas accidentables y peligrosos para los conductores se encuentran en la cercania de las vias principales y sus cercanias; ya en el nivel de peligorsidad se encuentran la gran mayoria de barrios de la ciudad de Medellin donde se puede concluir que aunque no es un riesgo total movilizarse en la ciudad se debe tomar una preocuación en la movilidad ya que se tiene una tasa ya admitible de accidentes que pueden occurrir.
+Obteniendo esto se puede concluir que los barrios más accidentales y peligrosos para los conductores se encuentran en la cercanía de las vías principales y sus cercanías; ya en el nivel de peligrosidad se encuentran la gran mayoría de barrios de la ciudad de Medellín donde se puede concluir que aunque no es un riesgo total movilizarse en la ciudad se debe tomar una preocupación en la movilidad, ya que se tiene una tasa ya admisible de accidentes que pueden ocurrir.
+
 
 ### Aplicación Web 
 
-Se realizo una aplicación web para mostrar los diferentes modelos y graficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellin, para que de esta forma el publico libre pueda visualizar los datos y modelos predictivos.[link](https://e4r3as.herokuapp.com/)
+Se realizó una aplicación web para mostrar los diferentes modelos y gráficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellín, para que de esta forma el público libre pueda visualizar los datos y modelos predictivos.[link](https://e4r3as.herokuapp.com/)
