@@ -30,6 +30,10 @@ Adicionalmente, se utilizó una base de datos adicional para hacer el delineamie
 
 #### Mapas,diagramas y analisis descriptivo 
 
+Comparación entre los datos eliminados por incuengriencia que no afectan significativamente en el modelo.
+
+![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/DatosPerdidos.png)
+
 Mapa de accidentabilidad en el municipio de Medellín en la temporada de 2014 a 2019:
 
 ![](https://github.com/Universidad-Nacional-TAE/Primer-trabajo-TAE/blob/main/Images/MapaMedellinComunas.png)
