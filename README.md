@@ -5,9 +5,10 @@
 En el presente trabajo se realiza el estudio descriptivo y de modelos predictivos de la accidentabilidad de movilidad en el municipio de Medellín, Colombia; Para la creación del modelo de predicción se tuvieron en cuenta los días festivos, los días de quincena, el día de la semana, la fecha del accidente.  También se realiza un agrupamiento para las comunas y barrios en base a su frecuencia de accidente, para esto se analizaron los accidentes que provocaron, muertes, lesiones o solo daños materiales; Los métodos analíticos que a continuación se detallan condujeron a una agrupación de riesgo alto, medio y bajo tanto para los barrios como para las comunas.
 
 En base en esto se realizaron diferentes formas de representación descriptivas para realizar análisis como son:
-•	Mapas
-•	Diagrama de barras
-•	Tablas
+
+-	Mapas
+-	Diagrama de barras
+-	Tablas
 
 
 La serie de notebooks se realizo teniendo en cuenta las siguientes características de la base de datos del siguiente [link](http://medata.gov.co/dataset/incidentes-viales), donde se realizó una depuración de datos teniendo en cuenta variables que podrían llegar a tener una relación entre los datos y sirvieran para la predicción de estos mismos:
@@ -116,11 +117,11 @@ En la siguiente gráfica se presenta el nivel de importancia de las variables se
 
 - Coeficientes:
 
-| Dia  | Mes  | Año | Festivo  |Quincena | Viernes  | Luneas  | Sabado| Domingo  | Jueves  | Martes| Miercoles | Intercepto |
-| :------------ |:---------------:| -----:|
+| Dia  | Mes  | Año | Festivo  |Quincena | Viernes  | Lunes  | Sabado| Domingo  | Jueves  | Martes| Miercoles | Intercepto |
+|:---:|:---:| :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | -0.434 | 2.000 | 2.21 | -9.13| -0.828| 4.56 |2.0631| -02972 |  -12.4 |    1.63| 2.90  | 2.000  | 78.46 |
-
- Las unidades de los coeficientes para las variables son: $$Choque /x $$ donde $$x$$ es según corresponda. Para la variable Quincena corresponde a $$Choques /Quincenas $$.
+ 
+ Las unidades de los coeficientes para las variables son:  <img src="https://render.githubusercontent.com/render/math?math=choque/x"> donde <img src="https://render.githubusercontent.com/render/math?math=x">  es según corresponda. Para la variable Quincena corresponde a <img src="https://render.githubusercontent.com/render/math?math=Choques/Quincenas">.
  
  En promedio hay 78 accidentes tipo choque al día, sin embargo, los días como viernes y lunes se exhibe un aumento en el número de accidentes, una hipótesis para explicar este fenómeno podría ser por el hecho que los viernes las personas pueden exhibir un cansancio acumulado por la semana laborada. Otra hipótesis para explicar lo del día de lunes podría ser que las personas una reducción en su estado de alerta por los días de descanso presentados previamente.
  
@@ -131,13 +132,13 @@ Como es de esperar los domingos y festivos la movilidad en Medellín es bastante
 Luego de sintonizar los parámetros para la creación del modelo, en este caso el del modelo lineal se obtuvieron los siguientes RMSE.
 
 | Entrenamiento| Tests| Evaluacion|
-| --- | --- |
+| --- | --- | --- |
 | 13.08 Choque | 14.82 Choque | 46.18 Choque|
 
 Como se observa no hay sobredimensionamiento en la creación del modelo por lo cual se considera que el modelo tiene la capacidad para predecir valores futuros para otros años a pesar de que el comportamiento en la evaluación es deficiente pues este resultado era de esperar pues el 2020 fue un año atípico por la presencia de épocas con marcada cuarentena.
 
 
-#### Cluster
+### Cluster
 
 Se busca agrupar los barrios de Medellín en base a su accidentalidad. El agrupamiento busca identificar aquellos barrios en los que es mas frecuente los accidentes y con base en estos se tomar acciones de control para evitar el aumento de estos.
 
@@ -196,9 +197,9 @@ Se realizó una aplicación web para mostrar los diferentes modelos y gráficas 
 
 ### Bibliografia
 
-[Stack overflow](https://stackoverflow.com/)
-[Pandas](https://pandas.pydata.org/)
-[Geopandas](https://geopandas.org/en/stable/)
-[Scikit learn](https://scikit-learn.org/stable/)
-[Dashboard with python](https://towardsdatascience.com/dash-for-beginners-create-interactive-python-dashboards-338bfcb6ffa4)
-[Limpieza de datos](https://aprendeia.com/limpieza-y-procesamiento-de-datos-con-codigo-en-python/)
+- [Stack overflow](https://stackoverflow.com/)
+- [Pandas](https://pandas.pydata.org/)
+- [Geopandas](https://geopandas.org/en/stable/)
+- [Scikit learn](https://scikit-learn.org/stable/)
+- [Dashboard with python](https://towardsdatascience.com/dash-for-beginners-create-interactive-python-dashboards-338bfcb6ffa4)
+- [Limpieza de datos](https://aprendeia.com/limpieza-y-procesamiento-de-datos-con-codigo-en-python/)
