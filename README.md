@@ -194,12 +194,13 @@ Dado la cantidad desbalanceada de tipo de accidentes se sospecha que no hay un r
 
 En cuánto a la aplicación se podría mejorar el proyecto generando un indicativo que indique dada las características del momento o de determinado tramo de la ciudad cual prediga que tipo de accidentes es mas probable que tenga, es decir, clasificar dada las características del sector o la hora.
 
-### Video promocional
+### Video 
 
-En siguiente enlace es un vio promocional del trabajo realizado.[Video](https://youtu.be/K-YZjpwqD_Q)
+En siguiente enlace es un video promocional del trabajo realizado.[Video](https://youtu.be/K-YZjpwqD_Q)
+
 ### Aplicación Web 
 
-Se realizó una aplicación web para mostrar los diferentes modelos y gráficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellín, para que de esta forma el público libre pueda visualizar los datos y modelos predictivos.[link](https://share.streamlit.io/sigomezgi/aplicacion-incidentes-viales/main/Main.py)
+Se realizó una aplicación web para mostrar los diferentes modelos y gráficas en tiempo real de los datos de la accidentabilidad en el municipio de Medellín, para que de esta forma el público libre pueda visualizar los datos y los modelos predictivos.[link](https://share.streamlit.io/sigomezgi/aplicacion-incidentes-viales/main/Main.py)
 
 ### Bibliografia
 
